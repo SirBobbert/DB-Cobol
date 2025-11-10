@@ -1,0 +1,27 @@
+      *.\cobbuild.bat -x opg2.cob -o opg2.exe -lcob
+      *.\opg2.exe
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. OPG2.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  KUNDE-ID    PIC X(10).
+       01  FORNAVN    PIC X(20).
+       01  EFTERNAVN    PIC X(20).
+       01  KONTONUMMER    PIC X(20).
+       01  BALANCE    PIC 9(7)V99 VALUE ZERO.
+       01  VALUTAKODE    PIC X(3).
+
+       PROCEDURE DIVISION.
+           MOVE 12345123 TO KUNDE-ID
+           MOVE "Robert" TO FORNAVN
+           MOVE "Pallesen" TO EFTERNAVN
+           MOVE "DK125512421321" TO KONTONUMMER
+           MOVE 2500.75 TO BALANCE
+           MOVE "DKK" TO VALUTAKODE
+
+       DISPLAY KUNDE-ID
+       DISPLAY FORNAVN EFTERNAVN
+       DISPLAY KONTONUMMER
+       DISPLAY BALANCE VALUTAKODE
+       STOP RUN.

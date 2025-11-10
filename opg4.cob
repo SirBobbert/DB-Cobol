@@ -1,0 +1,26 @@
+      *.\cobbuild.bat -x opg4.cob -o opg4.exe -lcob
+      *.\opg4.exe
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. OPG4.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 KUNDEOPL.
+           02 KUNDE-ID PIC X(10) VALUE SPACES.
+           02 FORNAVN PIC X(20) VALUE SPACES.
+           02 EFTERNAVN PIC X(20) VALUE SPACES.
+           02 KONTOINFO.
+               03 KONTONUMMER PIC X(20) VALUE SPACES.
+               03 BALANCE PIC 9(7)V99 VALUE ZEROS.
+               03 VALUTAKODE PIC X(3) VALUE SPACES.
+
+       PROCEDURE DIVISION.
+           MOVE 12345123 TO KUNDE-ID
+           MOVE "Robert" TO FORNAVN
+           MOVE "Pallesen" TO EFTERNAVN
+           MOVE "DK125512421321" TO KONTONUMMER
+           MOVE 2500.75 TO BALANCE
+           MOVE "DKK" TO VALUTAKODE
+
+       DISPLAY KUNDEOPL
+       STOP RUN.
