@@ -17,38 +17,50 @@
        FILE SECTION.
        FD  INPUT-FILE.
        01  INPUT-RECORD.
-           05 NAME PIC X(5).
-           05 AGE  PIC 99.
+           02 NAVN-ADR PIC X(100).
 
        FD  OUTPUT-FILE.
-       01  OUTPUT-RECORD.
-           05 NAME PIC X(5).
-           05 AGE  PIC 99.
+       01  KUNDE-ADR.
+           02 NAVN-ADR PIC X(100).
 
        WORKING-STORAGE SECTION.
       *Loop control flag
        01  END-OF-FILE PIC X VALUE "N".
+           88 END-OF-FILE VALUE "Y".
+           88 MORE-TO-READ VALUE "N".
+
+       01 FULDE-NAVN PIC X(100) VALUE SPACES.
+       01 ADR-LINJE PIC X(100) VALUE SPACES.
+       01 BY-LINJE PIC X(100) VALUE SPACES.
+       01 KONTO-LINJE PIC X(100) VALUE SPACES.
+       01 KONTAKT-LINJE PIC X(100) VALUE SPACES.
 
        PROCEDURE DIVISION.
-       MAIN-PROCEDURE.
+       MAIN-PROGRAM.
       *Open files
            OPEN INPUT  INPUT-FILE.
            OPEN OUTPUT OUTPUT-FILE.
 
       *Process until EOF
-           PERFORM UNTIL END-OF-FILE = "Y"
+           PERFORM UNTIL END-OF-FILE
       *Read next line
                READ INPUT-FILE
                    AT END
-                       MOVE "Y" TO END-OF-FILE
+                       SET END-OF-FILE TO TRUE
                    NOT AT END
+                       PERFORM BEHANDL-KUNDE
+                   END-READ
+               END-PERFORM
+               CLOSE KUNDE-ADR
       *Copy input record to output record
-                       MOVE INPUT-RECORD TO OUTPUT-RECORD
+                       DISPLAY "-------------------"
+                       DISPLAY INPUT-RECORD
+                       DISPLAY "-------------------"
+                       MOVE INPUT-RECORD TO KUNDE-ADR
       *Write to output
-                       WRITE OUTPUT-RECORD
+                       WRITE KUNDE-ADR
       *Echo to console using qualified names
-                       DISPLAY "Name: " NAME OF OUTPUT-RECORD
-                               ", Age: " AGE OF OUTPUT-RECORD
+                       *>DISPLAY "Name: " NAVN-ADR OF KUNDE-ADR
                END-READ
            END-PERFORM.
 

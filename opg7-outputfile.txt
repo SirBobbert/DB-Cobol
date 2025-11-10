@@ -1,4 +1,12 @@
-John 30
-Jane 25
-Alice28
-Bob 35
+K000000001Lars                Jensen              00000000000000000001000152345DKHovedgaden
+           12A  2         København           2100DK12345678lars.jensen@example.com
+
+K000000002Mette               Sørensen            00000000000000000002000000000DKStationsvej
+            5    	     Aarhus              8000DK87654321mette.sorensen@example.dk
+
+K000000003Ole                 Nielsen             12345678901234567890987654321EURSkovvej
+             100  1    th   Odense              5000DK30123456ole.nielsen@business.com
+
+K000000004Anna                Kristensen           00000000000000000004000004999USDBakken
+              2         Esbjerg             6700DK40404040anna.k@example.com
+K000000005Peter               Holm                 00000000000000000005250000000DKStrandvej
