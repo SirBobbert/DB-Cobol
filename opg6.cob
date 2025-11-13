@@ -22,6 +22,7 @@
        WORKING-STORAGE SECTION.
       *Loop control flag
        01  END-OF-FILE PIC X VALUE "N".
+       
 
        PROCEDURE DIVISION.
       *Open files
@@ -30,15 +31,15 @@
       *Process until EOF   
            PERFORM UNTIL END-OF-FILE = "Y"
       *Read next line
-               READ INPUT-FILE
+               READ INPUT-FILE INTO INPUT-RECORD
                    AT END
                        MOVE "Y" TO END-OF-FILE
                    NOT AT END
                        DISPLAY 
                                "Kunde ID: "    KUNDE-ID OF INPUT-RECORD
-                               "Name: "        NAME     OF INPUT-RECORD
-                               "Age: "         AGE      OF INPUT-RECORD
-                               "City: "        CITY     OF INPUT-RECORD
+                               " Name: "        NAME     OF INPUT-RECORD
+                               " Age: "         AGE      OF INPUT-RECORD
+                               " City: "        CITY     OF INPUT-RECORD
                END-READ
            END-PERFORM.
 
