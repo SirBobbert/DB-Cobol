@@ -1,30 +1,30 @@
 Anna Hansen
 Rosengade 12 st tv
-2100 Kobenhavn
+2100 Kobenhavn DK
 Konto: DK1234567890 Saldo: 000125050 DKK
 Tlf: 12345678 Email: anna.hansen@example.com
 
 Peter Jensen
 Stationsvej 7 1 th
-2600 Glostrup
+2600 Glostrup DK
 Konto: DK9876543210 Saldo: 002500000 DKK
 Tlf: 87654321 Email: peter.jensen@example.com
 
 Maria Larsen
 Park 45 2 mf
-2620 Albertslund
+2620 Albertslund DK
 Konto: DK5555555555 Saldo: 000000000 DKK
 Tlf: 11112222 Email: maria.larsen@example.com
 
 Jonas Nielsen
 Bakkevej 3 st th
-2700 Bronshoj
+2700 Bronshoj DK
 Konto: DK2222333344 Saldo: 000150075 DKK
 Tlf: 33334444 Email: jonas.nielsen@example.com
 
 Sofie Madsen
 Skolevej 10 3 tv
-2610 Rodovre
+2610 Rodovre DK
 Konto: DK6666777788 Saldo: 999999999 DKK
 Tlf: 44445555 Email: sofie.madsen@example.com
 
