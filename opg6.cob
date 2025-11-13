@@ -14,8 +14,10 @@
        FILE SECTION.
        FD  INPUT-FILE.
        01  INPUT-RECORD.
+           05 KUNDE-ID   PIC X(4).
            05 NAME PIC X(5).
            05 AGE  PIC 99.
+           05 CITY PIC X(3).
 
        WORKING-STORAGE SECTION.
       *Loop control flag
@@ -32,8 +34,11 @@
                    AT END
                        MOVE "Y" TO END-OF-FILE
                    NOT AT END
-                       DISPLAY "Name: " NAME OF INPUT-RECORD
-                               ", Age: " AGE OF INPUT-RECORD
+                       DISPLAY 
+                               "Kunde ID: "    KUNDE-ID OF INPUT-RECORD
+                               "Name: "        NAME     OF INPUT-RECORD
+                               "Age: "         AGE      OF INPUT-RECORD
+                               "City: "        CITY     OF INPUT-RECORD
                END-READ
            END-PERFORM.
 
