@@ -1,0 +1,5 @@
+0000000001Anna                Hansen              Rosengade                12   st   tv   2100Kobenhavn                DK12345678     anna.hansen@example.com               
+0000000002Peter               Jensen              Stationsvej              7    1    th   2600Glostrup                 DK87654321     peter.jensen@example.com              
+0000000003Maria               Larsen              Park Alle                45   2    mf   2620Albertslund              DK11112222     maria.larsen@example.com              
+0000000004Jonas               Nielsen             Bakkevej                 3    st   th   2700Bronshoj                 DK33334444     jonas.nielsen@example.com             
+0000000005Sofie               Madsen              Skolevej                 10   3    tv   2610Rodovre                  DK44445555     sofie.madsen@example.com              

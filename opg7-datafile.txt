@@ -1,5 +1,0 @@
-0000000001Anna                Hansen              DK1234567890        000125050DKKRosengade                     12   st   tv   Kobenhavn           2100DK12345678anna.hansen@example.com                           
-0000000002Peter               Jensen              DK9876543210        002500000DKKStationsvej                   7    1    th   Glostrup            2600DK87654321peter.jensen@example.com                          
-0000000003Maria               Larsen              DK5555555555        000000000DKKPark Alle                     45   2    mf   Albertslund         2620DK11112222maria.larsen@example.com                          
-0000000004Jonas               Nielsen             DK2222333344        000150075DKKBakkevej                      3    st   th   Bronshoj            2700DK33334444jonas.nielsen@example.com                         
-0000000005Sofie               Madsen              DK6666777788        999999999DKKSkolevej                      10   3    tv   Rodovre             2610DK44445555sofie.madsen@example.com                          

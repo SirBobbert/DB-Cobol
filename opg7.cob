@@ -104,6 +104,8 @@
       *Build "Vejnavn Husnr Etage Side"
        FORMAT-ADR.
       *Clear address line
+
+      
            MOVE SPACES TO ADR-LINJE
       *Concatenate street, house number, floor and side
            STRING
