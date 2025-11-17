@@ -1,0 +1,29 @@
+Kunde-ID: 0000000001 | Navn: Anna Hansen
+Adresse: Rosengade, 2100 Kobenhavn
+Tlf: DK12345678      | Email: anna.hansen@example.com
+     KONTO-ID: 001        | TYPE: privat               | BALANCE: 00000100  DKK
+     KONTO-ID: 002        | TYPE: privat               | BALANCE: 00000200  EUR
+
+Kunde-ID: 0000000002 | Navn: Peter Jensen
+Adresse: Stationsvej, 2600 Glostrup
+Tlf: DK87654321      | Email: peter.jensen@example.com
+     KONTO-ID: 001        | TYPE: privat               | BALANCE: 00000150  USD
+
+Kunde-ID: 0000000003 | Navn: Maria Larsen
+Adresse: Park, 2620 Albertslund
+Tlf: DK11112222      | Email: maria.larsen@example.com
+     KONTO-ID: 001        | TYPE: privat               | BALANCE: 00000150  USD
+     KONTO-ID: 002        | TYPE: privat               | BALANCE: 00000150  USD
+     KONTO-ID: 003        | TYPE: privat               | BALANCE: 00000150  USD
+
+Kunde-ID: 0000000004 | Navn: Jonas Nielsen
+Adresse: Bakkevej, 2700 Bronshoj
+Tlf: DK33334444      | Email: jonas.nielsen@example.com
+     KONTO-ID: 001        | TYPE: privat               | BALANCE: 00000150  USD
+
+Kunde-ID: 0000000005 | Navn: Sofie Madsen
+Adresse: Skolevej, 2610 Rodovre
+Tlf: DK44445555      | Email: sofie.madsen@example.com
+     KONTO-ID: 001        | TYPE: privat               | BALANCE: 00000150  USD
+     KONTO-ID: 002        | TYPE: privat               | BALANCE: 00000150  USD
+

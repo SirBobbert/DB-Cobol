@@ -1,0 +1,21 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. OPGAVE9.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 BOI OCCURS 5 TIMES.
+           05 KUNDE-ID    PIC X(10).
+           05 FORNAVN     PIC X(20).
+
+       01 I PIC 99.
+
+       PROCEDURE DIVISION.
+
+       PERFORM VARYING I FROM 1 BY 1
+           UNTIL I > 5
+           MOVE I TO KUNDE-ID(I)
+           MOVE "BOB" TO FORNAVN(I)
+           DISPLAY BOI(I)
+       END-PERFORM.
+
+       STOP RUN.
